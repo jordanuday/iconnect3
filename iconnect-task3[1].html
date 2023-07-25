@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Lists App</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>User Lists App</h1>
+        <div class="output-container">
+            <h2>Output:</h2>
+            <h3> Unique Users from List1:
+                <div class="output" id="output1"></div>
+            </h3>
+            <h3>Unique Users from List2:
+                <div class="output" id="output2"></div>
+            </h3>
+            <h3>
+                Common Users:
+                <div class="output" id="output3"></div>
+            </h3>
+
+        </div>
+        <div class="d-flex flex-column button-container">
+            <button class="btn btn-primary" onclick="getUniqueUsersList1()">Get Unique Users from List1</button>
+            <button class="btn btn-primary" onclick="getUniqueUsersList2()">Get Unique Users from List2</button>
+            <button class="btn btn-primary" onclick="getCommonUsers()">Get Common Users</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
